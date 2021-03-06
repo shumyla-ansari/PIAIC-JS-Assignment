@@ -16,21 +16,15 @@ for (i=newText.length; i>0; i--)
 }
 alert(reverseString)
 
-// for (var i =0; i<newText.length; i++){
-//   var newChar = newText.slice(i, i+1);
-//   console.log(newText.length)
-//   console.log(newChar, i, "first")
-//     var lastChar = newText.charAt(newText.length-1-i);
-//     console.log(lastChar, i, "last")
-//  var reverseText = newText.replace(lastChar, newChar)
-//  if (i === newText.length/2){
-//    break;
 
- //}
-//}
+//-------------assignment 2-------//
+var newInput; 
+var input = prompt("Enter a random string sentence");
+var words = input.toLowerCase().split(" ");
+console.log(words)
+for (var i =0; i<words.length; i++){
+words[i] = words[i].charAt(0).toUpperCase() + words[i].substring(1);
+var  newwords = words.join(" ");
+}
 
-//console.log( reverseText)
-
-
-  //This
-  //  0123
+alert(newwords)
