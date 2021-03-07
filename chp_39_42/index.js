@@ -1,30 +1,34 @@
-var firstName = prompt("Enter your name");
-var dateOfBirth = prompt("Enter your date of birth");
-var monthOfBirth= prompt("Enter your month");
-var yearOfBirth = prompt("Enter your year of birth");
-console.log(dateOfBirth);
-console.log(monthOfBirth);
-console.log(yearOfBirth);
+var totalMarks = 500;
+var course1 = parseInt(prompt("Please enter course 1 marks"));
+var course2 = parseInt(prompt("Please enter course 2 marks"));
+var course3 = parseInt(prompt("Please enter course 3 marks"));
+var course4 = parseInt(prompt("Please enter course 4 marks"));
+var course5 = parseInt(prompt("Please enter course 5 marks"));
+var obtainedMarks = course1+ course2+ course3+ course4+ course5;
 
-var currentDate = new Date();
-console.log(currentDate);
+var percentage = obtainedMarks * 100/ totalMarks;
+console.log(percentage)
 
-var currentHours = currentDate.getHours();
-console.log(currentHours)
-if (currentHours >= 12 && currentHours < 18 ){
-  var greeting = "Good Afternoon"
-} else if ( currentHours > 00 && currentHours < 12){
-  var greeting = "Good Morning"
-} else if ( currentHours > 18 && currentHours < 24){
-  var greeting = "Good Evening"
+switch(true) {
+  case (percentage >= 90):
+  alert("A+");
+  break;
+  case percentage >= 80:
+  alert("A");
+  break;
+  case percentage >= 70:
+  alert("B");
+  break;
+  case percentage >= 60:
+  alert("C");
+  break;
+  case percentage >= 50:
+  alert("D");
+  break;
+  case percentage >= 40:
+  alert("F");
+  break
+   default:
+   alert("Fail");
+
 }
-
-console.log("Hello " + firstName + " " + greeting);
- var yourBirthday = new Date( "\"" + monthOfBirth+ ", "+ dateOfBirth+ " "+ yearOfBirth + "\"");
- //var localTime = yourBirthday.toLocaleDateString('en-GB', { timeZone: 'UTC' });
- console.log("your date of birth: "+ yourBirthday);
-
- var birthday = yourBirthday.getFullYear();
- var currentYear = currentDate.getFullYear();
- var totalYears = currentYear - birthday
- console.log(totalYears)

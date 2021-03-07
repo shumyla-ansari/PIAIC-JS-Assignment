@@ -23,3 +23,26 @@ function factorialize(num) {
 }
 
 console.log(factorialize(5));
+
+//-----------------------
+
+function multipl(num1, num2, num3) {
+  var multilpied = (num1 * num2 * num3);
+
+   return multilpied
+}
+var value = multipl(4,3,6);
+console.log("value", value)
+
+//-----------------------
+
+function add(num1, num2) {
+  var added = (num1 + num2);
+
+   return added
+}
+var valueSum = add(4,3);
+console.log("valueSum", valueSum)
+
+//-------------
+
