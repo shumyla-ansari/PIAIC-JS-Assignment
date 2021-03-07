@@ -1,8 +1,18 @@
-var usCurrency = 10;
-var saudiCurrency = 25;
-var pakCurrency = (usCurrency * 155) + (saudiCurrency * 41);
+var a = 2; 
+var b = 1;
+var result = --a - --b + ++b + b--;
+1, - 0 +1 + 1
 
-document.write("Total Pak Currency : " + pakCurrency);
+
+document.write("The value of --a is : "+ --a + "<br>"); //10
+document.write("-------------------------------- <br>");
+document.write("The value of --b; is : "+ --b + "<br>"); //11
+document.write("The value of ++b; is : "+ ++b + "<br><br>"); //11
+
+document.write("The value of b--; is : "+  b-- + "<br>"); //11
+
+document.write("The value of result; is : "+  result + "<br>"); //11
+
 
 
 
