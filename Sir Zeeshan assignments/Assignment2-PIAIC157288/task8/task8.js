@@ -1,3 +1,12 @@
-var num1 = 5;
-var num2 = 4;
-document.write("sum of " + num1 + " and "  + num2 + " is " +  (num1+num2))
+var number = parseInt(prompt("Please enter number"));
+console.log(number)
+
+
+if (number === 0) {
+  document.write("You entered 0");
+} else if (number > 0) {
+  document.write("You entered Positive value");
+} else if (number < 0) {
+    document.write("You entered Negative value");
+} 
+

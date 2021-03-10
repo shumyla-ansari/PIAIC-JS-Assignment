@@ -1,2 +1,21 @@
+var firstNumber = parseInt(prompt("Please enter first number"));
+var secondNumber = parseInt(prompt("Please enter second number"));
+var operator = prompt(
+  'Please enter operator of ypur choice, "+", "-", "*", "/" or "%".'
+);
 
-document.write("Variable names can only contain numbers, $, _. For example $my_1stVariable<br><br>Variables must begin with a letter,$ or _. For example $name, _name or name <br><br> Variable names are case sensitive<br><br> Variable names should not be JS keywords")
+if (operator === "+") {
+  result = firstNumber + secondNumber;
+} else if (operator === "-") {
+  result = firstNumber - secondNumber;
+} else if (operator === "/") {
+  result = firstNumber / secondNumber;
+} else if (operator === "%") {
+  result = firstNumber % secondNumber;
+} else if (operator === "*") {
+  result = firstNumber * secondNumber;
+}
+
+document.write(
+  "Your result is :" + firstNumber + operator + secondNumber + "=" + result
+);
