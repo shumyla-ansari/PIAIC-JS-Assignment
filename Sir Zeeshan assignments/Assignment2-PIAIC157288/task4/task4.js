@@ -1,0 +1,1 @@
+document.write("I can write JS code on browser")
