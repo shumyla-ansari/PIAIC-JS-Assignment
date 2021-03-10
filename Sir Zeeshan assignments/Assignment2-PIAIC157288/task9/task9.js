@@ -1,7 +1,20 @@
-var num1 = 5;
-var num2 = 4;
-document.write("sum of " + num1 + " and "  + num2 + " is " +  (num1+num2) + 
-"<br>multiple of " + num1 + " and "  + num2 + " is " +  (num1*num2) + 
-"<br>modulus of " + num1 + " and "  + num2 + " is " +  (num1%num2) + 
-"<br>subration of " + num1 + " and "  + num2 + " is " +  (num1-num2) + 
-"<br>division of " + num1 + " and "  + num2 + " is " +  (num1/num2));
+var enteredString = (prompt("Please enter a string letter"));
+
+if (enteredString === "a") {
+  result = "true";
+} else if (enteredString === "e") {
+  result = "true";
+} else if (enteredString === "i") {
+  result = "true";
+} else if (enteredString === "o") {
+  result = "true";
+} else if (enteredString === "u") {
+  result = "true";
+}
+else {
+    result = "False"
+}
+
+document.write(
+  "Your result is :" + enteredString + "=" + result
+);
