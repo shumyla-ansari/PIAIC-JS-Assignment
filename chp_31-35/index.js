@@ -27,4 +27,14 @@ console.log("Hello " + firstName + " " + greeting);
  var birthday = yourBirthday.getFullYear();
  var currentYear = currentDate.getFullYear();
  var totalYears = currentYear - birthday
- console.log(totalYears)
+
+ var date = new Date();
+
+// convert to milliseconds, add local time zone offset and get UTC time in milliseconds
+var utcTime = date.getTime() + (date.getTimezoneOffset() * 60000);
+
+var timeOffset = 5;
+
+// create new Date object for a different timezone using supplied its GMT offset.
+var PaksTime = new Date(utcTime + (3600000 * timeOffset));
+console.log(PaksTime)

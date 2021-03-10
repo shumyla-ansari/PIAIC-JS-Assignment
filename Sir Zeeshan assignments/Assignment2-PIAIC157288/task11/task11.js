@@ -1,9 +1,15 @@
-var tempInCel = 25;
-tempInFar = (tempInCel * 9/5 ) +32;
-document.write(tempInCel+ "degrees C is " + tempInFar +" deg F <br>");
+var enteredTime = (prompt("Please enter a time in 0000 24-hour format"));
 
-var tempInFar1 = 70;
-tempInCel1= ( tempInFar1 - 32) * 5/9;
-document.write(tempInFar1+ "degrees F is " + tempInCel1 +" deg C <br>");
+if (enteredTime >= 0000 && enteredTime < 1200) {
+  result = "Good Morning";
+} else if (enteredTime >= 1200 && enteredTime < 1700) {
+  result = "Good Afternoon";
+} else if (enteredTime >= 1700 && enteredTime < 2100) {
+  result = "Good Evening";
+} else if (enteredTime >= 2100 && enteredTime < 2359) {
+  result = "Good Night";
+} 
 
-
+document.write(
+  "Your result is :" + enteredTime + "=" + result
+);
