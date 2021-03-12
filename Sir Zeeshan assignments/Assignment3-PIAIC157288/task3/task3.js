@@ -1,68 +1,56 @@
-var a = 4;
-if (++a === 5) {
-    alert("given condition for variable a is true");
-}
+//---------a
 
-//-----------------
-var b = 82;
-if (b++ === 83) {
-    alert("given condition for variable b is true");
-}
-console.log(b, "after running \"b\" condition")
-document.write("Value of b is : "+ b +  " after \"b\" condition hence (82 !== 83)<br>")
+var colours = ["green", "blue", "red", "yellow"];
 
+var userStartColor = prompt("Please enter colour of your choice to be added in beginning");
 
-//---------------------
-var c = 12;
-if (c++ === 13) {
-    console.log("condition 1 is true", c)
+colours.unshift(userStartColor);
 
-    alert("condition 1 is true");
-}
-console.log(c, "after 1st condition")
-document.write("Value of c is : "+ c +  " after 1st condition<br>")
+document.write("Colour added in begining : " + colours+" <br>");
 
-if (c === 13) {
-    console.log("condition 2 is true", c)
-    alert("condition 2 is true");
-}
-console.log("Value of c is : "+ c + "after 2nd condition")
-document.write("Value of c is : "+ c +  " after 2nd condition<br>")
+// ---------b
 
-if (++ c < 14) {
-    console.log("condition 3 is true", c)
-    alert("condition 3 is true");
-}
-console.log(c, "after 3rd condition")
-document.write("Value of c is : "+ c +  " after 3rd condition<br>")
-if (c === 14) {
-    console.log("condition 4 is true", c)
-    alert("condition 4 is true");
-}
-console.log(c, "after 4th condition")
-document.write("Value of c is : "+ c +  " after 4th condition")
+var userEndColor = prompt("Please enter colour of your choice to be added at end");
 
-//-------------------
+colours.push(userEndColor);
+document.write("Colour added in end : " + colours + " <br>");
 
-var materialCost = 20000;
-var laborCost = 2000;
-var totalCost = materialCost + laborCost;
-if (totalCost === laborCost + materialCost){
-alert("The cost equals");
-}
+//-----------c
 
-//--------------------------
-if (true){
+var colours = ["green", "blue", "red", "yellow"];
+colours.unshift("purple, black");
+document.write("Colours added in begining : " + colours+" <br>");
 
-    alert("True");
-    }
-    if (false){
-    alert("False");
-    }
+//-----------d
 
-//----------------------
-    
-if("car" < "cat"){
-    
-    alert("car is smaller than cat");
-    }
+var colours = ["green", "blue", "red", "yellow"];
+colours.shift();
+document.write("Colour deleted in begining : " + colours+" <br>");
+
+//-----------e
+
+var colours = ["green", "blue", "red", "yellow"];
+colours.pop();
+document.write("Colour deleted in end : " + colours+" <br>");
+
+//---------f
+
+var colours = ["green", "blue", "red", "yellow"];
+
+var userRandomColor = prompt("Please enter colour of your choice to be added");
+var userPositionColor = parseInt(prompt("Please enter position/index of your choice to be added"));
+
+colours.splice(userPositionColor, 0, userRandomColor);
+
+document.write("Colour added in at "+ userPositionColor + " index : " + colours+" <br>");
+
+//---------g
+
+var colours = ["green", "blue", "red", "yellow"];
+
+var numDeleteColor = parseInt(prompt("Please enter colour how many colours to be deleted"));
+var delPositionColor = parseInt(prompt("Please enter position/index of your choice to be deleted"));
+
+colours.splice(delPositionColor, numDeleteColor);
+
+document.write("Total " + numDeleteColor + " Colours deleted in at "+ delPositionColor + " index : " + colours+" <br>");
