@@ -1,15 +1,13 @@
-var enteredTime = (prompt("Please enter a time in 0000 24-hour format"));
+var A = ["cake", "apple pie", "cookie", "chips", "patties"];
 
-if (enteredTime >= 0000 && enteredTime < 1200) {
-  result = "Good Morning";
-} else if (enteredTime >= 1200 && enteredTime < 1700) {
-  result = "Good Afternoon";
-} else if (enteredTime >= 1700 && enteredTime < 2100) {
-  result = "Good Evening";
-} else if (enteredTime >= 2100 && enteredTime < 2359) {
-  result = "Good Night";
-} 
+var userInput = prompt("Welcome , what do you want?")
 
-document.write(
-  "Your result is :" + enteredTime + "=" + result
-);
+for (var i = 0; i < A.length; i++){
+  if (userInput === A[i]){
+    alert(A[i] + " is available in bakery")
+    break;
+  } else if (userInput !== A[i]){
+    alert(userInput + " is not available in bakery")
+    break;
+  }
+}
