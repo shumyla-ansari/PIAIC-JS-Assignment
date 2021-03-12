@@ -1,9 +1,16 @@
-var secretNum = 3;
-var inputNum = parseInt(prompt("Please enter number between 1 to 10"));
+var duplicatecity = ["Karachi", "Lahore", "Islamabad", "Quetta", "Islamabad", "Islamabad", "Islamabad", "Peshawar", "Peshawar", "Peshawar","Islamabad", "Islamabad"];
+var uniqueArray = [];
+
+for (var i = 0; i < duplicatecity.length; i++) {
+
+ 
+    if(uniqueArray.indexOf(duplicatecity[i]) === -1 ) {
+  
+        uniqueArray.push(duplicatecity[i]);
+    }
 
 
-if (inputNum === secretNum ) {
-    document.write("Bingo..!! You won!!!")
-}  else if (++inputNum === secretNum ) {
-    document.write(" close enough!")
-}  
+}
+
+
+    document.write(uniqueArray)

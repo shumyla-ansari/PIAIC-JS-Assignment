@@ -1,9 +1,12 @@
 
-var inputNum = parseInt(prompt("Please enter number between 1 to 10"));
-var remainder = inputNum % 2;
+var city = ["Karachi", "Lahore", "Islamabad", "Faisalabad"]
+var o = ["th", "st", "nd", "rd"];
 
-if (remainder === 0 ) {
-    document.write("Even")
-}  else  {
-    document.write(" Odd!")
+for (var i = 0; i < city.length; i++) {
+    if(i+1+o[i+1] === NaN){
+        break;
+    }
+    document.write(i+1+o[i+1] + " choice is " + city[i] + "<br>")
+
+
 }
