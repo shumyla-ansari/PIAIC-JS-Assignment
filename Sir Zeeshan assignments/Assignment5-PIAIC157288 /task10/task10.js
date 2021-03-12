@@ -1,10 +1,54 @@
-//Sort an array from smallest to largest value
+// Write a JavaScript function that accept string and returns the count
+// of vowel used within the string.
 
-var A = [20,53,78,4,91,12];
+function str(text) {
+  var length = text.length;
+  console.log(length);
+  var count = 0;
+  var j = 0;
 
-A.sort(function(a,b) {
-    return a-b 
-})
+  while (j < text.length) {
+    var i = text[j];
+    switch (i) {
+      case "a":
+        console.log("vowel", i);
+        count++;
+        console.log(count, "count");
+        break;
 
-console.log(A);
+      case "e":
+        console.log("vowel", i);
+        count++;
+        console.log(count, "count");
+        break;
 
+      case "i":
+        console.log("vowel", i);
+        count++;
+        console.log(count, "count");
+        break;
+
+      case "o":
+        console.log("vowel", i);
+        count++;
+        console.log(count, "count");
+        break;
+
+      case "u":
+        console.log("vowel", i);
+        count++;
+        console.log(count, "count");
+        break;
+
+      default:
+        console.log("not a vowel", i);
+        break;
+    }
+
+    j++;
+  }
+
+  return console.log(count);
+}
+
+str("i will not allow");

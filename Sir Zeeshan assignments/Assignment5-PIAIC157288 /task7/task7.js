@@ -1,14 +1,24 @@
-var a = [10,20,4,40,60,70]
-var b = [1,2,3,4,5,6,7,8,9,10]
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-var c = b.concat(a);
-var d = [];
-console.log(c)
+var date = new Date();
+var day = date.getDay()
+console.log(day)
 
-for ( i= 0; i < c.length ; i ++) {
-  if (d.indexOf(c[i]) === -1) {
-    d.push(c[i])
+function weekend(day) {
+
+  var remainingdays = 6-day
+
+  console.log(remainingdays)
+  switch(day) {
+    case 6:
+      console.log("Today is Saturday");
+    case 0:
+      console.log("Today is Sunday") ;
+      break;
+    default:
+      console.log("looking forward to weekend , just " + remainingdays + " more days left") 
   }
 
 }
-console.log(d)
+
+(weekend(day));

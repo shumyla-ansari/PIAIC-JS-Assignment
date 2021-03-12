@@ -9,20 +9,15 @@ function mirror(arr){
 }
 console.log(mirror(array));
 
-// var array = [0,5,6,7];
-// var reverse =[];
-// var newArray =[];
+//------------------
 
-// function mirror(arr){
-//     var newArray =[];
-//     for(var i =0; i< arr.length; i++){
-//      var n = (arr.slice(i,i+1)).toString();
+var array = [0,5,6,7];
+function mirror(arr){
+    var newArray = arr.slice(0);
+    console.log(newArray)
+    newArray.reverse();
+    return arr.concat(newArray)
+}
+console.log(mirror(array));
 
-//         newArray.push(n)
 
-//     }
-
-//      return newArray
-// }
-
-// console.log(mirror(array));

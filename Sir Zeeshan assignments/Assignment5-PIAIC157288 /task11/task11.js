@@ -1,13 +1,50 @@
-var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+// Write a JavaScript function that accept string and returns the count
+// of vowel used within the string.
 
-var userInput = prompt("Welcome , what do you want?")
+function isVowel(char) {
+  var letter = char;
+var isValid = false
+    switch (letter) {
+      case "a":
+        console.log("vowel", letter);
+        isValid = true;
+        break;
 
-for (var i = 0; i < A.length; i++){
-  if (userInput === A[i]){
-    alert(A[i] + " is available in bakery")
-    break;
-  } else if (userInput !== A[i]){
-    alert(userInput + " is not available in bakery")
-    break;
+        case "e":
+          console.log("vowel", letter);
+          isValid = true;
+          break;
+
+          case "i":
+            console.log("vowel", letter);
+            isValid = true;
+            break;
+
+            case "o":
+              console.log("vowel", letter);
+              isValid = true;
+              break;
+
+              case "u":
+                console.log("vowel", letter);
+                isValid = true;
+                break;
+
+      default:
+        console.log("not a vowel", letter);
+        isValid
+        break;
+    }
+
+ 
+    return console.log(isValid)
   }
-}
+
+isVowel("a");
+isVowel("e");
+isVowel("i");
+isVowel("o");
+isVowel("u");
+isVowel("t");
+isVowel("v");
+isVowel("m");
