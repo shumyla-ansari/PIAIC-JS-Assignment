@@ -2,8 +2,8 @@
 // Math class. Display the value of dice in your browser.
 
 
-var dice = Math.floor( Math.random() * 6 );
-var dice2 = Math.floor( Math.random() * 6 )
+var dice = Math.floor( Math.random() * 6  ) +1;
+var dice2 = Math.floor( Math.random() * 6 ) +1;
 
 document.write("Randoe dice value :" + dice +  " <br>")
 document.write("Random dice value :" + dice2 +  " <br>")
